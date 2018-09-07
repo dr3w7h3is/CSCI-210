@@ -14,30 +14,32 @@ public class Decimal {
     private final static int MINNUM = 0;
     private PrintWriter pw;
     private Scanner scan;
-    private boolean valid = false;
-    private int dec;
+    private boolean valid = true;
+    private int dec = 0;
     private StringBuilder bin;
     private String hex;
 
     /**
      * Constructor
-     * @param pw PrintWriter will be used to write output to file
+     * @param pw used to write output to file csis.txt
      */
     public Decimal(PrintWriter pw) {
         this.pw = pw;
         scan = new Scanner(System.in);
-        dec = 0;
     }
     /**
-     * Executes the conversion between Decimal and Binary
+     * Method decToBin
+     * converts dec to bin and call respected methods for operation
      */
-    void decToBin() {
+    public void decToBin() {
         inputDec();
         toBin();
         outBin();
     }
     /**
-     * Prompts user for a Decimal value and reads the user input
+     * Method inputDec
+     * @param prompts user for dec input and requires valid input
+     * prints repsonses to console and csis.txt
      */
     private void inputDec() {
         do {
@@ -47,7 +49,7 @@ public class Decimal {
             if (dec > MINNUM && dec < MAXNUM) {
                 System.out.println("User inputted: " + dec + "\n");
                 pw.println("User inputted: " + dec + "\n");
-                valid = true;
+                valid = false;
             }
             else if (hex.matches("exit")) {
                 break;
@@ -57,17 +59,15 @@ public class Decimal {
                         " or type \"exit\" to go back to the main menu\n");
                 pw.println("Invalid entry please reenter a decimal number" +
                         " or type \"exit\" to go back to the main menu\n");
-                valid = false;
             }
-        } while (valid == false);
+        } while (valid);
     }
     /**
-     * Contains the logic for Decimal to Binary conversion
-     * Prints out the resulting decimal value to the console
+     * Method toBin
+     * @param convert dec to bin
      */
     private void toBin() {
         bin = new StringBuilder("");
-
         int binValue, holdValue;
         int value = dec;
 
@@ -79,23 +79,25 @@ public class Decimal {
         }
     }
     /**
-     * Writes the resulting binary value to the file "csis.txt"
+     * Method outBin
+     * @param prints result of conversion to console and csis.txt
      */
     private void outBin() {
         System.out.println("Your binary value is: " + bin + "\n");
         pw.println("Your binary value is: " + bin + "\n");
     }
     /**
-     * Executes the conversion between Decimal and Hexadecimal
+     * Method decToHex
+     * converts dec to bin and call respected methods for operation
      */
-    void decToHex() {
+    public void decToHex() {
         inputDec();
         toHex();
         outHex();
     }
     /**
-     * Contains the logic for Decimal to Hexadecimal conversion
-     * Prints out the resulting binary value to the console
+     * Method toHex
+     * @param convert dec to hex
      */
     private void toHex() {
         hex = "";
@@ -114,7 +116,8 @@ public class Decimal {
         }
     }
     /**
-     * Writes the resulting hexadecimal value to the file "csis.txt"
+     * Method outHex
+     * @param prints result of conversion to console and csis.txt
      */
     private void outHex() {
         System.out.println("Your hexadecimal value is: 0x" + hex + "\n");

@@ -11,45 +11,46 @@ import java.io.*;
 public class Hexadecimal {
 
     private final static int BITS = 8;
+    private final static String HEXREF = "0123456789ABCDEF";
     private PrintWriter pw;
     private Scanner scan;
-    private boolean valid = false;
-    private String hex;
+    private boolean valid = true;
+    private String hex = "";
     private StringBuilder bin;
     private int dec = 0;
-    private String HEXREF = "0123456789ABCDEF";
 
     /**
      * Constructor
-     * @param pw PrintWriter will be used to write output to file
+     * @param pw used to write output to file csis.txt
      */
     public Hexadecimal(PrintWriter pw) {
         this.pw = pw;
         scan = new Scanner(System.in);
-        hex = "";
-
     }
     /**
-     * Executes the conversion between Hexadecimal and Decimal
+     * Method hexToDec
+     * converts hex to dec and call respected methods for operation
      */
-    void hexToDec() {
+    public void hexToDec() {
         inputHex();
         toDec();
         outDec();
     }
     /**
-     * Prompts user for a Hexadecimal value and reads the user input
+     * Method inputHex
+     * @param prompts user for hex input and requires valid input
+     * prints repsonses to console and csis.txt
      */
     private void inputHex() {
         do {
             System.out.println("Enter a 8 character Hexadecimal number to convert: ");
             pw.println("Enter a 8 character Hexadecimal number to convert: ");
             hex = scan.next();
-            hex.toUpperCase();
+            hex = hex.toUpperCase();
             if (hex.length() == BITS && hex.matches("[0-9A-F]+")) {
                 System.out.println("User inputted: " + hex + "\n");
                 pw.println("User inputted: " + hex + "\n");
-                valid = true;
+                valid = false;
             }
             else if (hex.matches("exit")) {
                 break;
@@ -59,13 +60,12 @@ public class Hexadecimal {
                         " or type \"exit\" to go back to the main menu\n");
                 pw.println("Invalid entry please reenter a 8 character hexadecimal number" +
                         " or type \"exit\" to go back to the main menu\n");
-                valid = false;
             }
-        } while (valid == false);
+        } while (valid);
     }
     /**
-     * Contains the logic for Hexadecimal to Decimal conversion
-     * Prints out the resulting decimal value to the console
+     * Method toDec
+     * @param convert hex and dec
      */
     private void toDec() {
         int expo = 0;
@@ -77,23 +77,25 @@ public class Hexadecimal {
         }
     }
     /**
-     * Writes the resulting decimal value to the file "csis.txt"
+     * Method outDec
+     * @param prints result of conversion to console and csis.txt
      */
     private void outDec() {
         System.out.println("Decimal value is: " + dec + "\n");
         pw.println("Decimal value is: " + dec + "\n");
     }
     /**
-     * Executes the conversion between Hexadecimal and Binary
+     * Method hexToBin
+     * converts hex to bin and call respected methods for operation
      */
-    void hexToBin() {
+    public void hexToBin() {
         inputHex();
         toBin();
         outBin();
     }
     /**
-     * Contains the logic for Hexadecimal to Binary conversion
-     * Prints out the resulting binary value to the console
+     * Method toBin
+     * @param convert hex and bin
      */
     private void toBin() {
         bin = new StringBuilder("");
@@ -134,7 +136,8 @@ public class Hexadecimal {
         }
     }
     /**
-     * Writes the resulting binary value to the file "csis.txt"
+     * Method outBin
+     * @param prints result of conversion to console and csis.txt
      */
     private void outBin() {
         System.out.println("Your binary value is: " + bin + "\n");
