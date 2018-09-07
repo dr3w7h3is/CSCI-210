@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Binary
+comment1.params=pw
+comment1.target=Binary(java.io.PrintWriter)
+comment1.text=\r\n\ Constructor\r\n\ @param\ pw\ will\ be\ used\ to\ write\ output\ to\ file\r\n
+comment2.params=
+comment2.target=void\ binToDec()
+comment2.text=\r\n\ Executes\ the\ conversion\ between\ Binary\ and\ Decimal\r\n
+comment3.params=
+comment3.target=void\ inputBin()
+comment3.text=\r\n\ Prompts\ user\ for\ a\ Binary\ value\ and\ reads\ the\ user\ inpu\r\n
+comment4.params=
+comment4.target=void\ toDec()
+comment4.text=\r\n\ Contains\ the\ logic\ for\ Binary\ to\ Decimal\ conversion\r\n\ Prints\ out\ the\ resulting\ decimal\ value\ to\ the\ console\r\n
+comment5.params=
+comment5.target=void\ outDec()
+comment5.text=\r\n\ Writes\ the\ resulting\ decimal\ value\ to\ the\ file\ "csis.txt"\r\n
+comment6.params=
+comment6.target=void\ binToHex()
+comment6.text=\r\n\ Executes\ the\ conversion\ between\ Binary\ and\ Hexadecimal\r\n
+comment7.params=
+comment7.target=void\ toHex()
+comment7.text=\r\n\ Contains\ the\ logic\ for\ Binary\ to\ Hexadecimal\ conversion\r\n\ Prints\ out\ the\ resulting\ decimal\ value\ to\ the\ console\r\n
+comment8.params=
+comment8.target=void\ outHex()
+comment8.text=\r\n\ Writes\ the\ resulting\ hexadecimal\ value\ to\ the\ file\ "csis.txt\r\n
+numComments=9

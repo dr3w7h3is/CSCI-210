@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Menu
+comment1.params=pw
+comment1.target=Menu(java.io.PrintWriter)
+comment1.text=\r\n\ Constructor\r\n\ @param\ pw\ PrintWriter\ will\ be\ used\ to\ write\ output\ to\ file\r\n
+comment2.params=
+comment2.target=void\ display()
+comment2.text=\r\n\ Displays\ the\ menu\ screen\ to\ the\ user\ on\ the\ console.\r\n\ Also\ writes\ the\ menu\ screen\ to\ the\ file\ "csis.txt".\r\n
+comment3.params=
+comment3.target=int\ getSelection()
+comment3.text=\r\n\ Reads\ the\ users\ selection\ as\ to\ which\ operation\ they\ would\ like\ to\ execute.\r\n
+numComments=4
