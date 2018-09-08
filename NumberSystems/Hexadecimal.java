@@ -9,9 +9,8 @@ import java.util.*;
 import java.io.*;
 
 public class Hexadecimal {
-
     private final static int BITS = 8;
-    private final static String HEXREF = "0123456789ABCDEF";
+    private String HEXREF = "0123456789ABCDEF";
     private PrintWriter pw;
     private Scanner scan;
     private boolean valid = true;
@@ -29,7 +28,7 @@ public class Hexadecimal {
     }
     /**
      * Method hexToDec
-     * converts hex to dec and call respected methods for operation
+     * @param converts hex to dec and call respected methods for operation
      */
     public void hexToDec() {
         inputHex();
@@ -47,15 +46,18 @@ public class Hexadecimal {
             pw.println("Enter a 8 character Hexadecimal number to convert: ");
             hex = scan.next();
             hex = hex.toUpperCase();
+            // Checks user input to see if input is valid
             if (hex.length() == BITS && hex.matches("[0-9A-F]+")) {
                 System.out.println("User inputted: " + hex + "\n");
                 pw.println("User inputted: " + hex + "\n");
                 valid = false;
             }
+            // Allows user to exit operation and return to menu
             else if (hex.matches("exit")) {
                 break;
             }
             else {
+                // Prompts user that previous value entered is invalid and to reenter a value
                 System.out.println("Invalid entry please reenter a 8 character hexadecimal number" +
                         " or type \"exit\" to go back to the main menu\n");
                 pw.println("Invalid entry please reenter a 8 character hexadecimal number" +
@@ -65,15 +67,13 @@ public class Hexadecimal {
     }
     /**
      * Method toDec
-     * @param convert hex and dec
+     * @param algorithm to convert hex and dec
      */
     private void toDec() {
-        int expo = 0;
-        char hexValue;
         for (int i = 0; i < hex.length(); i++) {
-            hexValue = hex.charAt(hex.length() - i - 1);
-            dec += HEXREF.indexOf(hexValue) * (int) Math.pow(16, expo);
-            expo++;
+            char hexValue = hex.charAt(i);
+            int hexIndex = HEXREF.indexOf(hexValue);
+            dec = 16 * dec + hexIndex;
         }
     }
     /**
@@ -86,7 +86,7 @@ public class Hexadecimal {
     }
     /**
      * Method hexToBin
-     * converts hex to bin and call respected methods for operation
+     * @param converts hex to bin and call respected methods for operation
      */
     public void hexToBin() {
         inputHex();
@@ -95,7 +95,7 @@ public class Hexadecimal {
     }
     /**
      * Method toBin
-     * @param convert hex and bin
+     * @param algorithm to convert hex and bin
      */
     private void toBin() {
         bin = new StringBuilder("");

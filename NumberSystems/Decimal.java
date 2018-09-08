@@ -9,7 +9,6 @@ import java.util.*;
 import java.io.*;
 
 public class Decimal {
-
     private final static int MAXNUM = 2147483647;
     private final static int MINNUM = 0;
     private PrintWriter pw;
@@ -17,7 +16,7 @@ public class Decimal {
     private boolean valid = true;
     private int dec = 0;
     private StringBuilder bin;
-    private String hex;
+    private String hex = "";
 
     /**
      * Constructor
@@ -29,7 +28,7 @@ public class Decimal {
     }
     /**
      * Method decToBin
-     * converts dec to bin and call respected methods for operation
+     * @param converts dec to bin and call respected methods for operation
      */
     public void decToBin() {
         inputDec();
@@ -46,15 +45,18 @@ public class Decimal {
             System.out.println("Enter a valid integer to convert: ");
             pw.println("Enter a valid integer to convert: ");
             dec = scan.nextInt();
+            // Checks user input to see if input is valid
             if (dec > MINNUM && dec < MAXNUM) {
                 System.out.println("User inputted: " + dec + "\n");
                 pw.println("User inputted: " + dec + "\n");
                 valid = false;
             }
+            // Allows user to exit operation and return to menu
             else if (hex.matches("exit")) {
                 break;
             }
             else {
+                // Prompts user that previous value entered is invalid and to reenter a value
                 System.out.println("Invalid entry please reenter a decimal number" +
                         " or type \"exit\" to go back to the main menu\n");
                 pw.println("Invalid entry please reenter a decimal number" +
@@ -64,13 +66,12 @@ public class Decimal {
     }
     /**
      * Method toBin
-     * @param convert dec to bin
+     * @param algorithm to convert dec to bin
      */
     private void toBin() {
         bin = new StringBuilder("");
         int binValue, holdValue;
         int value = dec;
-
         while (value != 0) {
             holdValue = value / 2;
             binValue = value % 2;
@@ -88,7 +89,7 @@ public class Decimal {
     }
     /**
      * Method decToHex
-     * converts dec to bin and call respected methods for operation
+     * @param converts dec to bin and call respected methods for operation
      */
     public void decToHex() {
         inputDec();
@@ -97,7 +98,7 @@ public class Decimal {
     }
     /**
      * Method toHex
-     * @param convert dec to hex
+     * @param algorithm to convert dec to hex
      */
     private void toHex() {
         hex = "";

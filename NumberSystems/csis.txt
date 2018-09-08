@@ -7,15 +7,284 @@ Select one of the following operations:
 5) Hexadecimal to Decimal 
 6) Hexadecimal to Binary 
 7) Quit Program
+User executed operation: 1
+
+Enter a valid integer to convert: 
+User inputted: 65535
+
+Your binary value is: 1111111111111111
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 1
+
+Enter a valid integer to convert: 
+User inputted: 1000000
+
+Your binary value is: 11110100001001000000
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 1
+
+Enter a valid integer to convert: 
+User inputted: 1234567890
+
+Your binary value is: 1001001100101100000001011010010
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 2
+
+Enter a valid integer to convert: 
+User inputted: 65535
+
+Your hexadecimal value is: 0xFFFF
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 2
+
+Enter a valid integer to convert: 
+User inputted: 1000000
+
+Your hexadecimal value is: 0xF4240
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 2
+
+Enter a valid integer to convert: 
+User inputted: 1234567890
+
+Your hexadecimal value is: 0x499602D2
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 3
+
+Enter a 32-bit binary number to convert: 
+User inputted: 01100101110011011010111000000101
+
+Your decimal value is: 1707978245
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 3
+
+Enter a 32-bit binary number to convert: 
+User inputted: 01111111111111110010000111010011
+
+Your decimal value is: 2147426771
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 3
+
+Enter a 32-bit binary number to convert: 
+User inputted: 00000000000000000000000000000010
+
+Your decimal value is: 2
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 4
+
+Enter a 32-bit binary number to convert: 
+User inputted: 01100101110011011010111000000101
+
+Your hexadecimal value is: 0x65CDAE05
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 4
+
+Enter a 32-bit binary number to convert: 
+User inputted: 01111111111111110010000111010011
+
+Your hexadecimal value is: 0x7FFF21D3
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 4
+
+Enter a 32-bit binary number to convert: 
+User inputted: 00101011101011010111011000111010
+
+Your hexadecimal value is: 0x2BAD763A
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
 User executed operation: 5
 
 Enter a 8 character Hexadecimal number to convert: 
-Invalid entry please reenter a 8 character hexadecimal number or type "exit" to go back to the main menu
+User inputted: 12345678
+
+Decimal value is: 305419896
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 5
 
 Enter a 8 character Hexadecimal number to convert: 
-User inputted: FFFFFFFF
+User inputted: 2A3DF8A7
 
-Decimal value is: -1
+Decimal value is: 708704423
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 5
+
+Enter a 8 character Hexadecimal number to convert: 
+User inputted: 00FF00FF
+
+Decimal value is: 16711935
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 6
+
+Enter a 8 character Hexadecimal number to convert: 
+User inputted: 12345678
+
+Your binary value is: 00010010001101000101011001111000
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 6
+
+Enter a 8 character Hexadecimal number to convert: 
+User inputted: 2A3DF8A7
+
+Your binary value is: 00101010001111011111100010100111
+
+Select one of the following operations: 
+
+1) Decimal to Binary 
+2) Decimal to Hexadecimal 
+3) Binary to Decimal 
+4) Binary to Hexadecimal 
+5) Hexadecimal to Decimal 
+6) Hexadecimal to Binary 
+7) Quit Program
+User executed operation: 6
+
+Enter a 8 character Hexadecimal number to convert: 
+User inputted: 00FF00FF
+
+Your binary value is: 00000000111111110000000011111111
 
 Select one of the following operations: 
 

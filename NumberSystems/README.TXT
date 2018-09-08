@@ -4,9 +4,9 @@ Tell the reader (someone who does not know anything about this project)
 all he/she needs to know. The comments should usually include at least:
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
+PROJECT TITLE: Number Systems - Lab 1
+PURPOSE OF PROJECT: Assingment from Palomar College
+VERSION or DATE: 9/5/2018
 HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+AUTHORS: Drew Theis
+USER INSTRUCTIONS: 

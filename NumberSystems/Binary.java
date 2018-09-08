@@ -12,9 +12,9 @@ public class Binary {
     private final static int BITS = 32;
     private PrintWriter pw;
     private Scanner scan;
-    private boolean valid = false;
+    private boolean valid = true;
     private String bin = "";
-    private int dec = 0;
+    private int dec;
     private StringBuilder hex;
 
     /**
@@ -27,7 +27,7 @@ public class Binary {
     }
     /**
      * Method binToDec
-     * converts bin to dec and call respected methods for operation
+     * @param converts bin to dec and call respected methods for operation
      */
     public void binToDec() {
         inputBin();
@@ -44,28 +44,31 @@ public class Binary {
             System.out.println("Enter a 32-bit binary number to convert: ");
             pw.println("Enter a 32-bit binary number to convert: ");
             bin = scan.next();
+            // Checks user input to see if input is valid
             if (bin.length() == BITS && bin.matches("[01]+")) {
                 System.out.println("User inputted: " + bin + "\n");
                 pw.println("User inputted: " + bin + "\n");
-                valid = true;
+                valid = false;
             }
+            // Allows user to exit operation and return to menu
             else if (bin.matches("exit")) {
                 break;
             }
             else {
+                // Prompts user that previous value entered is invalid and to reenter a value
                 System.out.println("Invalid entry please reenter a 32-bit binary number" +
                     " or type \"exit\" to go back to the main menu\n");
                 pw.println("Invalid entry please reenter a 32-bit binary number" +
                     " or type \"exit\" to go back to the main menu\n");
-                valid = false;
             }
-        } while (valid == false);
+        } while (valid);
     }
     /**
      * Method toDec
-     * @param convert bin to dec
+     * @param algorithm to convert bin to dec
      */
     private void toDec() {
+        dec = 0;
         for (int i = 0; i < bin.length(); i++) {
             if (bin.charAt(i) == '1')
                 dec += Math.pow(2, bin.length() - 1 - i);
@@ -81,7 +84,7 @@ public class Binary {
     }
     /**
      * Method binToHex
-     * converts bin to hex and call respected methods for operation
+     * @param converts bin to hex and call respected methods for operation
      */
     public void binToHex() {
         inputBin();
@@ -90,7 +93,7 @@ public class Binary {
     }
     /**
      * Method toHex
-     * @param convert bin to dec
+     * @param algorithm to convert bin to dec
      */
     private void toHex() {
         hex = new StringBuilder("00000000");

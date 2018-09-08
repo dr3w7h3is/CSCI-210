@@ -25,7 +25,8 @@ public class Menu {
         this.pw = pw;
     }
     /**
-     * Method displays options for user selections in console and csis.txt 
+     * Method display 
+     * @param displays options for user selections in console and csis.txt 
      */
     public void display() {
         System.out.println("Select one of the following operations: \n\n" +
