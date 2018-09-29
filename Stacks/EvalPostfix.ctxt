@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=EvalPostfix
+comment0.text=\r\n\ EvalPostfix\ Class\r\n\r\n\ @author\ Drew\ Theis\r\n\ @date\ 9/27/2018\r\n
+comment1.params=postFixExp
+comment1.target=int\ evaluate(java.lang.String)
+comment1.text=\r\n\ Integer\ evaluate\r\n\ Has\ postFixExp\ string\ passed\ and\ used\ for\ StringBuilder\ applied\ to\ noSpaceExp\r\n\ removing\ the\ spaces\ allow\ for\ easier\ handling\r\n\ @return\ integer\ value\ of\ value\ for\ postStack\r\n
+numComments=2

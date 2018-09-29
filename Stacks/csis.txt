@@ -1,0 +1,40 @@
+The given expression: 8 + 4 * 2 - 6
+Postfix notation for expression  is: 8 4 2 * + 6 -
+Its corresponding evaluation is: 10
+
+The given expression: 7 * 2 - 4 * 3 + 2 * 5
+Postfix notation for expression  is: 7 2 * 4 3 * - 2 5 * +
+Its corresponding evaluation is: 12
+
+The given expression: 2 * 3 * 4 - 8 + 9 / 3 / 3
+Postfix notation for expression  is: 2 3 * 4 * 8 - 9 3 / 3 / +
+Its corresponding evaluation is: 17
+
+The given expression: 5 + 7 * 4 - 6
+Postfix notation for expression  is: 5 7 4 * + 6 -
+Its corresponding evaluation is: 27
+
+The given expression: 4 * ( 3 + 2 * 4 ) - 7
+Postfix notation for expression  is: 4 3 2 4 * + * 7 -
+Its corresponding evaluation is: 37
+
+The given expression: ( 5 + 7 ) / ( 9 - 5 )
+Postfix notation for expression  is: 5 7 + 9 5 - /
+Its corresponding evaluation is: 3
+
+The given expression: 3 * ( 5 * ( 5 - 2 ) ) - 9
+Postfix notation for expression  is: 3 5 5 2 - * * 9 -
+Its corresponding evaluation is: 36
+
+The given expression: ( ( 5 * ( 4 + 2 ) - ( 8 + 8 ) / 2 ) - 9 ) ^ 3
+Postfix notation for expression  is: 5 4 2 + * 8 8 + 2 / - 9 - 3 ^
+Its corresponding evaluation is: 2197
+
+The given expression: ( ( 5 + 5 * ( 6 - 2 ) + 4 ^ 2 ) * 8 )
+Postfix notation for expression  is: 5 5 6 2 - * + 4 2 ^ + 8 *
+Its corresponding evaluation is: 328
+
+The given expression: ( ( ( 3 ^ 4 ) ) )
+Postfix notation for expression  is: 3 4 ^
+Its corresponding evaluation is: 81
+

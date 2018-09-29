@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=ObjectStackInterface
+comment0.text=\r\n\ EvalPostfix\ Class\r\n\r\n\ @author\ Drew\ Theis\r\n\ @date\ 9/27/2018\r\n
+comment1.params=
+comment1.target=boolean\ isEmpty()
+comment1.text=\r\n\ Interface\ ObjectStackInterface\r\n\ Given\ code\ from\ class\ online\ and\ book\r\n
+comment2.params=
+comment2.target=boolean\ isFull()
+comment3.params=
+comment3.target=void\ clear()
+comment4.params=o
+comment4.target=void\ push(java.lang.Object)
+comment5.params=
+comment5.target=java.lang.Object\ pop()
+comment6.params=
+comment6.target=java.lang.Object\ top()
+numComments=7
